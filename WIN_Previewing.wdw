@@ -1,0 +1,151 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WIN_Previewing
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : WIN_Previewing
+ identifier : 0x28f73cfc01989a3d
+ internal_properties : CAAAAAgAAAB3qAE2/lcLcGjB4WSNz3pLq/+4ooq2FWy78Z01CC9KUElAj4VInBg3EZF+Quih74Z4kXeZydLpn0IeeLwJHN6xPJgD/MEr3QVjgT1e3AIogGewAH7RrqzZ0rS4s73mJ2fNlUmZPxcDx+gbb9uE9kz9OAGbVtA3BgdDguYSk6l2Lhl5foINxQK3t3TCpRms25EMavgCDmFaCDJONRoC4AOtPSLPdaWhe2d7Yp76hclRRZX4qCGVID77SB9CLMCNXfMfnsbmHUKPfkfe81DTu2KTE5F/h+ZY+REFgat8GVDV1ILPAgGsC4oWXPhrj5rpg4jLRrxN/K0L6LrQwC3905BWHx2WlarFMJEKODYJC1GCIrYWyEuOfH/u2wSF6bHCs9qhp9dnP1QegPC6HM+3BCETLz+8fNEiMS39Ke7uRElk3eto3y3/wqW+jXzr8vinA/QITMgCzGkH/azhE/Yf2hksTkpNrYUoshVqhirFpQTeOMb416314kHA0Sx7GIFSjsDkKV7EjFw/9Kxob8vpeuvGGob8Tw3rlr0VZbAT3asyOLfr+KQnVWuZAVYXYR/QhUxiW9kUXh3L5OlP9UnP+g645IpvY3hWdEN4iaUSavN3uEKA5cF0ewlfnnprfC+QeAObvh8wK2+RCv+sOWOkI2k8gOCoykRb677nTNprsPz1PxpsTULx6G62Ix/gA+/YKjhShr03hcuIOSKUi4nOZYK3a0cLbFzpSp3OC58GH/snUGJPJuRQ
+ properties :
+  width : 800
+  height : 600
+  widthMin : 0
+  heightMin : 0
+ controls :
+  -
+    name : IW_STANDBY
+    identifier : 0x28f73cfc01999a3d
+    internal_properties : CAAAAAgAAAA4Ivb0OV417EEDok7brVxCSCdingIszmELCNY26/eBrZh2cnu2f5O0Hg/dYVwstv6KbL4hsXfH0y7BBGNkz20jzO74or0kRwuL9z2IYK/iz2DYY+1fbmjFSsf4ychfdzqrn0jO+wEv1uOyE4mYXVU2zpgmN/Qqso4VjKO+MzC0pvBydUVjoNLRH9qmCo596xX9YecphGthcN98w+nhqMvxpfqVOpDa6H3oBWfdp5igN9LUcqFpSr5PQxwJBvBmYZe64fnoMlLHotQGbSW4bExd7hfK44SXPVr/wC0JneCRvocdxX2Qj6xbTcaIuuccscmDt9vcHheHft6R5OQHkS62uxAF0HaPhBWKfh/30c1hf6iwstB+NXjXpVm5ahObYaOjVU9TCJQs0iQtn2DUm1f7nffOgzE9hzdPVcaAwx3W6IojCWOPMYoede20ehKrFkwyc3TYPfR2HYSsYIuBceITGboK/Dbg+Ukb/Nrp93mm+G1uhjySX7DGNyTNUndw39KeaTi8s5tuCKtX4v0=
+    properties :
+     width : 800
+     height : 600
+    controls : []
+    type : 31
+    code_elements :
+     type_code : 73
+     p_codes :
+      -
+        type : 33
+        enabled : false
+      -
+        type : 234
+ menu :
+  name : _Menu
+  identifier : 0x256ae27b1b54e86c
+  internal_properties : CAAAAAgAAAD5gPGcQ0NcUf7AMYGSjH3SKonY1aajmHiCylebi1O+vnN+S50LvYGcaeoWjnMgQ5jz4Ib9YIctreSaq8B2nCq8hSNvnNUGk4PU6mjZTVra+ztp0/uuuq7ZXWc9V42DlHnf1NpiH/fT9ENuIAPeUBMFaA8loINATdTF5tlL1bms0rSsvkMFETC8MED3i+fm6j9fvqcI93+PiyTAcZ+w1g2bhOPDn3eY34Yf5VlAbG/rGOihIqGsnStzVXZsmZCqaCdVJmz7ppaLAKKqNI5Cm/ssb1iT1MuTie0/Jwcq9rvGZQ==
+  options : []
+ languages :
+  - en-GB
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAAA3ARHkcJX73LcgKJDKsN7wrSshDrlhOyXPCSmfVQCY7o0elaRtOVFTyjTMDK0O0N0XEvb3D6qaWeIXGhsnOVPxlMNXemwNZgzWtWxyVj4FLs8Ebn6rFzlMF0prcA==
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAAA7czNpPJ1GmXfS/g7FcSIGY0ih80FMRhB7b3Np1iLkmiCnlMbToPdf/lXofB0uEJH8DexT+ac5GX8q0cQ+s1EYGcTVWerm4orzSURIwXnnir8xIyX9qM6ztZXxcueRe1l5anz6Sjpyo3z//c+L3NHNv6lGnoIA4Rh0mJ9sXXaM
+     code : |1-
+      
+      gnHwnd is system int
+      
+      // Retrieves the handle passed in parameter
+      gnHwnd = Val(NoSpace(ExtractString(Upper(CommandLine()), 2, " ")))
+      
+      cvRect is composed of 
+      	nLeft   is int
+      	nTop    is int
+      	nRight  is int
+      	nBottom is int
+      END
+      
+      // Retrieves the dimensions of the preview window of Windows
+      API("user32", "GetClientRect", gnHwnd, &cvRect)
+      
+      // Resizes the window
+      MyWindow..Width = cvRect.nRight
+      MyWindow..Height = cvRect.nBottom	
+      
+      // Indicates that our window becomes a child window of the preview window of Windows
+      API("user32", "SetParent", Handle(), gnHwnd)
+      
+      // The preview window of Windows takes focus
+      SysSetFocus(gnHwnd)
+   -
+     code : |1-
+      
+      // Checks whether the preview window is still active
+      CheckExistence()
+     type : 34
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1-
+      
+      EndProgram()
+     type : 2
+   -
+     type : 11
+   -
+     type : 12
+   -
+     type : 17
+   -
+     type : 13
+  procedures :
+   -
+     name : CheckExistence
+     internal_properties : CAAAAAgAAABvPFu4Nv2cdagoBmGPSzZXYN2/ZjxjRduu36bQTOb/cUVfwW934Z98gDWcO0NDmMtLBe05n3jw0I/QhmaEZJwLTzyDRLZLCncH1R3z1Hc8zh6PICEwnpfq2gGBKB9YxE2/rjXufcENlzu8j8Cd1OsOs83YFxHLlVYCCW1QiBg+1QoaD85OOmYn2lcu5qryenW/42qcGh/UQHDZKvkGINYhSsXilQ==
+     procedure_id : 1798973629193951805
+     type_code : 14
+     code : |1+
+      // Summary: Checking the existence of the preview window of Windows
+      // Syntax:
+      //CheckExistence ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      //// Automatic procedure:
+      // The procedure is run manually, during a call in the code
+      // It will be repeated in loop, with 1 hundredths of a second between each call
+      // A new timer is created for each call to the procedure
+      // 
+      
+      PROCEDURE CheckExistence()
+      
+      // Exit if the preview window of Windows is not valid anymore
+      IF NOT API("user32","IsWindow", gnHwnd) THEN
+      	
+      	// Indicates that our window becomes a child window of the preview window of Windows
+      	API("user32", "SetParent", Handle(), 0)
+      	
+      	EndProgram()
+      END
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : FEN_Fenêtre1
+resources :
+ string_res :
+  identifier : 0x156ae27b001de86c
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+associated_test :
+ name : TEST_Prévisualisation.wxt
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

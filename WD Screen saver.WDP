@@ -1,0 +1,122 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WD Screen saver
+ major_version : 28
+ minor_version : 0
+ type : 4097
+ description : This project explains how to create a screen saver for Windows
+ subtype : 0
+project :
+ identifier : 0x0
+ internal_properties : CAAAAAgAAAD6GnaOp4vo5mwTrmrFKwldPAnvC0ZEBpLIFnw9D/OyioaHftFAqXDFeDFw56cm2apImLHsi5oO3T3fdFRDSxwkTQ6EznBnIeVKRLKDpnvWUbd+3co1wblZ3dhtBZWx7YTKHQ83aIveStnAXCBxYykkpuQr3T5LZxKqzd1VKAt2Ha5EIpqESlTMe4Y4mwzC6G1OIUT+O+HTFrVwPjjwGJFv3BNqQxntQu9wLw6T7qR4doVe4q7oIo72gAk6xgDtW5RRAsZcD8mqC9nv8MM5fkKa+EupISi0rrYxlxCsj5hFEBAvRghvP4OQxdiTE5dyYmvJ4x0GiGWCErzY3v32dpc0I4ZryR0MB7ozTNm7/rErRJJHnYUBbRjJ4+aGOELJOmbggsvixJqIvaxIKXqMmM59OZhKKksBN3BUdCwUXeBSDmj1adJ/jC3VwbC8CpTENkNRXKlrtcqg+r7ofMnaKKUiPGc9ete3Y6ZThwavjGfr2rzhrrpkzew8Zoc+lECz8ry4NLN/EOKlYSHWQz8M2M66dVYuI2oPrUAfI9JWNbm21AgysIj99sWvwfVRrWHTbZh/L7svdNNeO32Q03A1ZOg+HOS+9tH3IXAJgt7oYrRRaTvuckPGQ5hU+K+q0ghbv5HISi7NwnQaCDUwq7kepw+NNJqkXBaK+krskSL5a8QOpDHVCs2qM4nKNT1HTxJcGkVvzDYfQbK9L5AVgpyD59XuUgkJimSYxL5wYGhAd4EEEpXx0ZhTsIuWYJd3PF/vtx5wdMrN4M8ehiUniD6aHeuhOGOe4wxIYLu4m2D192XOXNZKQVtEdo4M4F1XSqZrrxxde/NLqlkjdtR/bh7nMBy2Sr6SCQMPhpxKwcPvzVFZSDAEqEmq4c5OC+4HDrTdgTzYgzlhd2cC2QhhzL9PWbedlmAHfz4wtJH7UyYhRCNTIjvw0DmLGy3l8Qo8VcXoG95rMduyX/quMuInXP4SaGYQL85ZlTNHsU1g5SjTb2eLjxaM2Y6CKFKcsk05x8Q6Jeu8XCRCys0fghuv3yUrNhDkiZxJe3ytsG8MilVTw/5MGCHEZWZ6pXpF70fdMLBV8AqkFN3n1VHUZqW5GLyEneq0dMVOhoIUJDBODtiLSTfE2NRtNhi3hIVlNjqyYEfc6ImvOaQQLbnE2bF6AwrzVd9WNCAYU6DwNWJfTKV3f5qcA1k69zKwDmx0MLs2/x8JVU0H8y7LQLjAct9vBYg/seD4hVKYEF6c6xMhQDl2AVtPWYwhkZBB6TphvzV2xmFty1yiskD9cPgqSS1oHQAX6XQXPzse5d1vkCR1zZW0wBSyEgpKCIIda1PdOrEYO7BocsLZBm2vVaHx94F7MaRaV/mSyAaCGg65oPq2mfix3pxgFBQY0ktqujqv2/7PV5Z2HHqelfsmADHV+cXA7x4CoMZYrp8E8xLc5V07+2+iIq//e9iwRBId/9EcPxrclFzMH6DHCxSFFQRO4EiNjD2fLrekd7bCg9JNhvqa2kNsAU0WtxQVIpL6JpvVGAuXDy20ptPP93TUyr/Q2Ap9gTpXBdOlEsJw/f0aFXkLOZWRg4tqtMhtGDnELGta9lArzcX9ffJA24RJSA8lwH1uKpxmNiDKXWk7uaK/+XUUUtzWDR8ITcy02rEnXJIZS+ElKivNFKKn7YaBV2Hy4eRuzd7N8TiZOJSq1n8FcZNk4+iVROUu4goYsvPfCKn+op/AGz2BFc8+4tXz7rNS11im4tx+Hhr2dQxmWgQUjiIxtE+tYYDHOE7vw5HB0PvRYEryHqY5sMqxm2VnOApjs4wa96vzF2qqphtSKzJ7Lv4W/03NNcEYckhr2eQlIXoIaqtgU5fTGrbdHuZYnogopARTM1EOBABtf4qrRVJKlZgaWNsECA3blbkF51VacGMGRm6fSv2QCVxIrMqq5iYcjLdpyk01kdyHZxB5pLcUouxbVSa9
+ configurations :
+  -
+    name : WD Screen saver
+    internal_properties : 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
+    configuration_id : 15866129301989930653
+    type : 1
+    generation_name : WD Screen Saver.exe
+    version :
+     major_version : 22
+     minor_version : 59
+     internal_generation_version : 5
+     autoincrement_version : false
+    icon_filename : .\VST13120-32-5.ico
+    language : 2
+ elements :
+  identifier : 0x4ac47ffe00138ead
+  elements :
+   -
+     name : Global procedures of WD Screen Saver
+     identifier : 0x456acfee000070c9
+     internal_properties : CAAAAAgAAABJxbFVUg8nyJeWaRMLmRhOyeqU9LgpoHJ2hUNUNs/PKdcFT3OuC8nBsGpUrHRsFIRM1A==
+     physical_name : .\Global procedures of WD Screen Saver.wdg
+     type : 7
+   -
+     name : WIN_Previewing
+     identifier : 0x456ae27b0004e86c
+     internal_properties : CAAAAAgAAADSKAoerZqSTWrp6JKK6ak/UsehIQWOR/FWndgKcqPx790hzfUvikpAM+3XIeEf2803Pw==
+     physical_name : .\WIN_Previewing.wdw
+     type : 2
+   -
+     name : IW_ScreenSaver
+     identifier : 0x456ad35d0002daaf
+     internal_properties : CAAAAAgAAAAGDG6ycS6GqbZ1JE7WN4H3hufdhbU++Qh2RSOwpJEDDeffDyPzzpYMz0mzDZVLN6kTEw==
+     physical_name : .\IW_ScreenSaver.wdw
+     type : 8
+   -
+     name : WIN_ScreenSaver
+     identifier : 0x456ad3950003b4e3
+     internal_properties : CAAAAAgAAAAQ7khUUwggO4RHGiB4etdJnM8rw+XOtXOKWOgrrUhM3NDOYFLBOPzy4VtFs3NtFYt1/Q==
+     physical_name : .\WIN_ScreenSaver.wdw
+     type : 2
+  other_elements : []
+  net_assemblies : []
+  uwp_api : []
+  external_components : []
+  internal_components : []
+ report_and_queries_enabled : false
+ common_generation_directory : true
+ languages :
+  - en-GB
+ wd_style_sheet : .\WD Screen Saver.sty
+ wb_style_sheet : .\WD Screen Saver.wws
+ code_elements :
+  internal_properties : CAAAAAgAAAC4o4lsSqTIeHBz2OCALl4bZAP5XYCS3iwzUFLV9PCUJvjB2N8lyt/GcJpi/hqjLx0LalQ7VH0ZkH6AYv7cgf85RLS6
+  type_code : 0
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAAAJ77eIkLsGFhr1/alI5idCUEL360Xr+9FfkYzPmy0JLh/evtYBqR1RfCuqtNAi8GU17Ji4Rx8FjnjxJSmNGhBznwM5Hs0UkLEJyasA3ARJxDYPpVb0hbYC1JUDJVnYjp9h19PWQA9gVDAHPzz3V7qxQoTdqeGhjlckES9SwzW1GhtvIOuh+KfvuqB5k9zy88mqVNIj4Z+lUJJElFKYOw==
+     code : |1-
+      
+      WHEN EXCEPTION
+      	EndProgram()
+      END
+      
+      EXTERN "winconst.wl"
+      
+      gbScreenSaverMode  is boolean
+      gnWidthAllScreens  is system int
+      gnHeightAllScreens  is system int
+      gnXPosAllScreens     is system int
+      gnYPosAllScreens     is system int
+      gbPreviewMode is boolean
+      
+      //
+      // Initializations
+      //
+      GetScreenInformation()
+      
+      // If the extension of the file is '.scr', the mode is Screen Saver
+      gbScreenSaverMode = fExtractPath(ExeInfo(exeName), fExtension) ~= ".scr"
+      
+      // Process the command line
+      ProcessCommandLine()
+     type : 196608
+   -
+     code : |1-
+      
+     type : 196621
+   -
+     type : 196627
+     enabled : false
+  orphans :
+   -
+     name : WD Screen saver
+     identifier : 0x4ac47ffe001a8f77
+     code_elements :
+      type_code : 159
+      p_codes : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+rad :
+ internal_properties : CAAAAAgAAABhIL0UXeZmxDJxY3Xy0Q==
+project_explorer :
+ explorer_type : project
+resources :
+ string_res :
+  identifier : 0x0
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAAAd98VSJfHHqE3P0QHwrwdhn7ig8dWBR6valpUTgnAMTVXiDg==

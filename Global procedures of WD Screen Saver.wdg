@@ -1,0 +1,143 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : Global procedures of WD Screen Saver
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x18f73cfe0073a384
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  internal_properties : CAAAAAgAAAD2bB3hlW/wD/XVMAdc2QSzvqR7emUkecDeyABjet1hoWjJmCVqwIHh5fmAzYpQCVVfqBNvSPO5X7KjPQmwhkBjOCckps0CGYDqKBU3kS8Z/JJO9gQSQi/eZK4KtGxB8vx9pGODdwvVV+jB6jwCKvh5
+  type_code : 31
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAACQX0w6H50e+PNuE84i98yvmwBRjUQ1lJ4ZQyezFT+GDwe4vNltDddvfkpbmQXiryTXoH/Ps5VtbBcoWnXXqDsjIIvCD/Kmiyh9IXqovQhhJfad3CXdJZ3jnzWnBnRXBumKUXPHjvW6Q4BpgQ==
+     code : |1-
+      
+      // Windows API constants (management of multi-screens)
+      CONSTANT	
+      	SM_XVIRTUALSCREEN       = 76
+      	SM_YVIRTUALSCREEN       = 77
+      	SM_CXVIRTUALSCREEN      = 78
+      	SM_CYVIRTUALSCREEN      = 79
+      	SM_CMONITORS            = 80
+      	SM_SAMEDISPLAYFORMAT    = 81
+      END
+     type : 720896
+  procedures :
+   -
+     name : GetScreenInformation
+     internal_properties : CAAAAAgAAADoQzQSD6xYmRaG603Ketse25DcXNp/gV6cRlil7Xjq18KPwWS5HrR9fDTW0PYi5crgEIxlfhJZ88wIKU40MLT5oxy6+kQWk6rakv56pJ22pTab8Z3VnkvopMk0NusUrs9bmrkb7OGtVqiTji10iIFg/VvXmjBlIMew7ay+vWEPxg7A4qoH5i0I/KmrsXQUVW2L0mUYC4A=
+     procedure_id : 1798973637784806276
+     type_code : 15
+     code : |1-
+      // Summary: Retrieving the dimensions of the screens
+      // Syntax:
+      // GetScreenInformation ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      PROCEDURE GetScreenInformation()
+      
+      nNbScreens is system int
+      nReturn is system int
+      
+      IF SysWindowsVersion() = "95" THEN
+      	// Retrieves the dimensions of the main screen
+      	gnWidthAllScreens = SysXRes
+      	gnHeightAllScreens = SysYRes
+      ELSE
+      	// Retrieves the number of screens
+      	nNbScreens = SysMetric(SM_CMONITORS)
+      	
+      	// If the mode is 'Multi-screens'
+      	IF nNbScreens > 1 THEN
+      		
+      		// Retrieves the total width of all the screens
+      		nReturn = SysMetric(SM_CXVIRTUALSCREEN)
+      		gnWidthAllScreens = nReturn
+      		
+      		// Retrieves the total height of all the screens
+      		nReturn = SysMetric(SM_CYVIRTUALSCREEN)
+      		gnHeightAllScreens = nReturn			
+      		
+      		// Retrieves the X position of the first screen
+      		nReturn = SysMetric(SM_XVIRTUALSCREEN)
+      		gnXPosAllScreens = nReturn
+      		
+      		// Retrieves the Y position of the first screen
+      		nReturn = SysMetric(SM_YVIRTUALSCREEN)
+      		gnYPosAllScreens = nReturn
+      		
+      	ELSE
+      		// Retrieves the dimensions of the main screen
+      		gnWidthAllScreens = SysXRes
+      		gnHeightAllScreens = SysYRes
+      	END
+      END
+     type : 458752
+   -
+     name : ProcessCommandLine
+     internal_properties : CAAAAAgAAABgiwzao+QOodrqF/UqhusS5yRE7LpDpb6QarQFZdw6q0bTcRRBsgAtkPgqGA5m1d6cLOw1xl510xjk7V7UxHy9V6j60mxqn7pWHjrgQvPcT8zRv/dTNNnmst96dMkq9Jm5aI/FOk8bxPYhnPsaFhf640FFLNZDBh3G85KMS9e1aFSu6FxVtBsG4s9R10pSK0nniq1A0/g=
+     procedure_id : 1798973637784871812
+     type_code : 15
+     code : |1-
+      // Summary: Processing the parameters of the command line
+      // Syntax:
+      // ProcessCommandLine ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      PROCEDURE ProcessCommandLine()
+      
+      // Processes of the command line
+      SWITCH Upper(NoSpace(CommandLine()))[[TO 2]]
+      	// Parameters of the screen saver
+      	CASE "/C"
+      		Info("No parameter")
+      		EndProgram(True)
+      		
+      	// Preview
+      	CASE "/U"			
+      		Open(WIN_ScreenSaver)
+      		
+      	// Previewing
+      	CASE "/P"
+      		gbPreviewMode = True
+      		Open(WIN_Previewing)
+      		
+      	// Password
+      	CASE "/A"
+      		// No need to manage the password, it is managed by Windows
+      		EndProgram(True)
+      		
+      	// Standard startup
+      	OTHER CASE
+      		IF NOT InTestMode() AND NOT gbScreenSaverMode THEN
+      			// Copies the screen saver to the Windows directory
+      			fCopyFile(ExeInfo(exeName), CompleteDir(SysDir(srWindows)) + ProjectInfo(piProjectName) + ".scr")
+      		END
+      		Open(WIN_ScreenSaver)
+      END
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : COL_Collection1
+resources :
+ string_res :
+  identifier : 0x156acfee000d70c9
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ

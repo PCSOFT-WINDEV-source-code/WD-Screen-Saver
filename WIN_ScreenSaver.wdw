@@ -1,0 +1,101 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WIN_ScreenSaver
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : WIN_ScreenSaver
+ identifier : 0x28f73cfa01869357
+ internal_properties : CAAAAAgAAAAtGW47DhTdrMMkhf6dXeTAUnh2RkFapjYs+7yvos5TwwMd2u0zCrYdTiSFeE7TfxfUDxr/7sHNUWx3OSqDE6AKoAzG714yBfYFUMNxP4aOI+4quLhAp/+eUWKbCw7rqQ0T5oJurO/wDcNkK7nol9iSkzaMuMx4vuVmgEyRGYauUQIsMNjbnkMsJNEFQw5EPqg7URBSl+JLVS/t25DI5XqQVUGRabK5ShmdY2AvmqPPqms21DL+Jgk8ytzRQyvyBVUfTfN90dWATq+pHTn5FsQ3zde+Lzs2VKBDjt0A0qMv6rgQDO4qmIqU7patuvWBhNxZBmEhC61huC48nmybLsyxF+YRdNp11kE2V+nbdcLhqDGdcmZiXKfP0pI8AsBiLCI9VW9mv7fhY2mjZzmv4yEqgBQOdr2PeU0lFBw3Ar86kIuReZVlhY6qzjwov3fj10tLa0PMKphbWPj2fPvITjfVIqLguMFfGPgWSyHT6Z+CWxSG/nU33Ibr0Re4UurH4FgUWLZ6tpxAVpNQ6moIuCvRknib4cW/wzKb2aTNbaBtbzZZuBaS/kJAoFVl5hV0DD46g5zQCviT1nQ66E6fOzj1I4g3ZLzAUJW/ADN5eZnwOq7OVDDViRsMerEZp66IoX2jrKZRAvnIgbI1/2GTtDGbFJKPY42eb+3pxSQkiPV0tp2gAx1FTJoxz1Of6mF/okpVRRWbZ2S8M1saeH8n1dBSykHuy2ot6DGJgN++TycLHiA0
+ properties :
+  width : 800
+  height : 600
+ controls :
+  -
+    name : IW_STANDBY
+    identifier : 0x28f73cfa01879357
+    internal_properties : CAAAAAgAAABj2gn7gCaMjEDlbSb+EH2VpAOFP+r4uysVsSSXYGJsudMlktvOYtxkXzRA3rN1sxXxtZmhTkYJMyLXzwFxFQmrmtieXi7DMYwd12aAPVoAZzqF8cTv9pO1dwdwkQV0yTgH0j52lkJxaqKL47BnvlSTZu404r+ssG1LAisBdXMrwV67oMUa5mPm3wgJlxZCT0c1IiUfj4Znh9uQ8YiZRFynI3aotRehpD+mXkuDZcdIMwDynUvWFjWCSDrVO9oftHcSI4egH3Vulm78IiAF7ZhmISoRiX/H4+Z8zWGExPWk20/j5jZ80eCLdTcPu3t4aA0ASojP/BwqHo8Bl5f1A3X1ZZpxBYiXz9OY/Rq8ZefB+iblFEDc5lOjMA1M1+Ha0dreeoRpUauidG48ughFTkYhJu6MJoq0GQODoaFtIBXqX75193joBYwr3iNqasJ0OTftpdEbgjSjAqqb0ChZTYy5NGfDhIdTp2ons5gm8DTlEGOmyJ/+j+SNUcAD5TVyZT3iFBourw04Gg+7FhGBhWzv
+    properties :
+     width : 800
+     height : 600
+    controls : []
+    type : 31
+    code_elements :
+     type_code : 73
+     p_codes :
+      -
+        type : 33
+        enabled : false
+      -
+        type : 234
+ menu :
+  name : _Menu
+  identifier : 0x256ad3921706aae0
+  internal_properties : CAAAAAgAAAD5gPGcQ0NcUf7AMYGSjH3SKonY1aajmHiCylebi1O+vnN+S50LvYGcaeoWjnMgQ5jz4Ib9YIctreSaq8B2nCq8hSNvnNUGk4PU6mjZTVra+ztp0/uuuq7ZXWc9V42DlHnf1NpiH/fT9ENuIAPeUBMFaA8loINATdTF5tlL1bms0rSsvkMFETC8MED3i+fm6j9fvqcI93+PiyTAcZ+w1g2bhOPDn3eY34Yf5VlAbG/rGOihIqGsnStzVXZsmZCqaCdVJmz7ppaLAKKqNI5Cm/ssb1iT1MuTie0/Jwcq9rvGZQ==
+  options : []
+ languages :
+  - en-GB
+ popup_menus : []
+ message_bar :
+  internal_properties : CAAAAAgAAABbQyvyRSYGdwMqtgQiY0eyZHY8CJVCbvA6OSjvU4Mjo9g7K/z+S6PkWt206RIMVclum2pQ3B5kv4Tl9e+EbHJ0rQxjuMUijIZzrvmUB6CT228/CjjN6if+OifZj8fu
+ actionbar : {}
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1-
+      
+      // Hides the cursor
+      CursorDisplay(False)
+      
+      MyWindow..X = gnXPosAllScreens
+      MyWindow..Y = gnYPosAllScreens
+      MyWindow..Width = gnWidthAllScreens
+      MyWindow..Height = gnHeightAllScreens
+      
+      WinSize(WIN_ScreenSaver, gnXPosAllScreens, gnYPosAllScreens, gnWidthAllScreens, gnHeightAllScreens)
+      WinStatus("", AboveAll)
+      
+      Multitask()
+   -
+     code : |1-
+      
+     type : 34
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     internal_properties : CAAAAAgAAABkYxCOAWHWSEcmS47+Q4zr76DFeUhRJGaNs29bIcM+i9P48K1hoWenUlLTUcG+n+jT4Jtjp2sXjnWCcDud5gVpkt1ArZhMBRqjw7AWM4YjS6jH+jMDU88Vva+NPKIVwCdEi8l9zIuOl9Q91Q==
+     code : |1-
+      
+      // Redisplays the cursor
+      CursorDisplay(True)
+     type : 2
+   -
+     type : 11
+   -
+     type : 12
+   -
+     type : 17
+   -
+     type : 13
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : FEN_Fenêtre1
+resources :
+ string_res :
+  identifier : 0x156ad36c00181845
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+associated_test :
+ name : TEST_ScreenSaver.wxt
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

@@ -1,0 +1,258 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : IW_ScreenSaver
+ major_version : 28
+ minor_version : 0
+ type : 8
+ description : Screen saver
+ subtype : 0
+window :
+ name : IW_ScreenSaver
+ identifier : 0x28f73cfe01aaa1ce
+ internal_properties : CAAAAAgAAABGwG3sli4zXCS/8Oj2vmg70DGpQ1XJtp6rI4yq7FQIjk7Zu4UKRACXMiHDVuL5t6bLwkdBxUNJAb/g93Af6heHCUjaN6FKrOcMH3r+rFtX1ZZEsE0p1GvnLA6JVVOZYlzUhfKhqMpTV7FBCL09fwJrUlBp9exyI0Q2JtOkrzIWf5Ti9t4TM1qJ4sJALdda+cCNAZtHQcS9XqVHSceFVqWB/zcS2ehd5N8km1JeTRMCVMk4eFHb7oWgCv8smJ0EZn4AdKQB/uy2ZXiIlawjn9TMHYSZNHIYr01NjymxwfwS5R5n+i1qEdCN7DTrtNQR5/TxFkCVH0u2z+yOhF0m7BD6tKtWq8Y1Npt7ehnI7cuoQVHO6YtMP4UsOugbCYGuXQTBJsyIqvedyc9GyaO7GusFn7hxo3lwrJXVNK0pmGXMw+di1xwYFG+z40U9dL4NMGgJBDl/qVsBepf1qMGTnJrL45D+QXDX/NuqvJwzpFECDy860EOAouA+fJL36aVQeEoK8igCqiVKAM+fMQ3xvG1zHaRGmGYzTAVjKrH4fyWRqiIEMQ3BtFFI8BnRAtDVyXJ76eY+kaqQdRYw77kTDCrR6DVG4akfcWwKKXAk0pCnMVWO6TUbh0q/J9fwtM/oURIjjRFoTFW69YwmDZk9
+ properties :
+  width : 800
+  height : 600
+ controls :
+  -
+    name : IW_ScreenSaver
+    identifier : 0x28f73cfe01aba1ce
+    internal_properties : CAAAAAgAAABYdzyQbZX9BpYrXy1Ama8FuebLZYJ7YkJ13hlMdAJbo5m1TZxn34fyecIVZNxVXottPvDGAlA4EuZ1K6dYhU6I5zVxw4JlcAB3Nq2/xzN2iuO9b92oUK2dzk0oJX/i+5oB4R617lQ5r5GQGrw4AGt/49TTcI2VTTgTTHb29GHPqJkkbEsdYsq7mlcbap4THXJHcPkt5r05J1ZMgk/j7YNDpBKfwUX0pRzIy0hMcKnZ/01f6vO8OTysNOtv2egX2o8H7AvCcACAtCth8uIn3Xk7X26GN/l9XIzof3/qidHYqxdYvXjrG5Id4a9Byd3/vugP3q8pZwtDdlA/51tbuNnhvf9gL5nDR2DqF/+gzJjp08IklE5Vz5jLOc6BpiNd1f8vTmILRVbFgoH+DkagHNBAl+smzM8s8kzeeKjT1G4qrMew/FYQAuVpDGiU9PQrOV00C/vnoeWoOng0yFBWjXzfZqOCfWXDVbM6/b9Wyeo=
+    properties :
+     width : 800
+     height : 600
+    controls :
+     -
+       name : IMG_LOGO
+       identifier : 0x28f73cfe01aca1ce
+       internal_properties : CAAAAAgAAAATXFebM/d09+8wRLtN7mNmYEcYAZtk9dqobTS1yYOG0z2X4p5I2IuAU2RdK6BpBwmlFRlJLNnAuaA05TcRBhBCFbPhAogNFA8nh3IRFm8ovMp97GQvTrUtFtHG/c1ub5iOlj37C7xgJJmHDn13yEySpm1jepM4lj6xF95jZu68xrfIZls+/FSg6flZUVKEtrYjy0Uh1IN+JHyjkCd6nwuSDCX0r3iIQUxTwKmaMuilV2eq42+F5UpjWRbABR3/9ffJTi0T0nebp2izZiZQ3x98qX5sKmbYKxXiCpJloHdmfLw5edSK8FBwyBA1wODkuft4DKTjQENatBhKJEDX7jDGTZ8cNzsZC5VNjyMppgHz2XrNpyxmV6QhbjXF+x/5rOflBkgrecZijWdlmYlEoeBXHrZlI5Dr7Ph5MkOiSPkumvr8sD34V1mdVgkuOcVZW+iykou0vqwd4SlS4fqG1RbqRzPff9Yp2XMNN99QhFEzsa/aTpJLy2D9bf+n8caK92ydto6H7iVrXyCBEVPrcO6YqBt73r3kK5MkWUaBr859XRT9PalyTUg0fqCNqkRkQZHYybCOzOQlbtpMBLytILkXE0NTs9AwNMY76MGa9/qBxRpLl6vs9w==
+       properties :
+        width : 250
+        height : 250
+       type : 8
+       code_elements :
+        type_code : 8
+        p_codes :
+         -
+           type : 18
+           enabled : false
+    type : 32
+    code_elements :
+     type_code : 70
+     p_codes :
+      -
+        code : |1-
+         
+         gnCursorPos is int
+         
+         // Stores the position of the mouse
+         gnCursorPos = CursorPos(cpScreen)
+         
+         // Mouse click or keyboard key
+         IF NOT gbPreviewMode THEN
+         	Event(OnActivity, "*.*", WM_LBUTTONDOWN)
+         	Event(OnActivity, "*.*", WM_RBUTTONDOWN)
+         	Event(OnActivity, "*.*", WM_MBUTTONDOWN)
+         	Event(OnActivity, "*.*", WM_KEYDOWN)
+         END
+         
+         IF gbPreviewMode THEN
+         	IMG_LOGO..Width = CoordinateEditorToScreen(32)
+         	IMG_LOGO..Height = IMG_LOGO..Width
+         END
+         
+         // Check whether it is not already run
+         CheckIfOtherInstance()	
+         
+         // Animation
+         ScreenSaver()	
+      -
+        code : |1-
+         
+         IF NOT gbPreviewMode THEN
+         	CheckActivity()
+         END
+        type : 14
+      -
+        type : 15
+      -
+        type : 16
+ menu :
+  name : _Menu
+  identifier : 0x256ad35a1252ced8
+  internal_properties : CAAAAAgAAAC9auouxN3CiS1UHy69pCHJU2hPQP5aPrxDpuMd+folLnKLDclr4k04UVuUGa0eBjiUure/514NXQqvoA3kcE+ZfkAwZN5wuqf91stOSc7rrooKBe5p25+yGTrLtIh9cUvTSVwZqbm0iR8jS067DZVsr/rbKIf2qwSw5b0tai1hxqUFZkxL3IAJ4aLbMzxeRNbeYxe2gATNFCMeY38BgMEzxLp73ck14CZ1r43ovvpL1z80OL3aUfeKHbCfihfJqrDOO8iqc+h05HVbYos4EhHCLmjs/KDqmIik3JDNSn0=
+  options : []
+ languages :
+  - en-GB
+ popup_menus : []
+ message_bar : {}
+ actionbar : {}
+ code_elements :
+  type_code : 71
+  p_codes : []
+  procedures :
+   -
+     name : OnActivity
+     procedure_id : 1798973637784281550
+     type_code : 14
+     code : |1-
+      // Summary: Procedure called during an activity (mouse, keyboard)
+      // Syntax:
+      //OnActivity ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      PROCEDURE OnActivity()
+      
+      _EVE.Return = True
+      Close()
+     type : 458752
+   -
+     name : CheckActivity
+     internal_properties : CAAAAAgAAAAAU6ulE8z2T7NxaKH1bduq4k3yAC7oLCQ7OClVongR2b4wI0npbgfPVKLmXo69L0Jt2vs0c2zzhK9GEn2ZWFLFVHq6BnYDtxhkl0mH+PFVBxQhgisBDlobpXhKoaczIlSPTBzB85eCgknjzcN5cmQoXHToMjyw/XmzmzTB91jNnqcJAQ==
+     procedure_id : 1798973637784347086
+     type_code : 14
+     code : |1-
+      // Summary: Monitoring the events (mouse move, mouse click, keyboard key)
+      // Syntax:
+      //CheckActivity ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      //// Automatic procedure:
+      // The procedure is run manually, during a call in the code
+      // It will be repeated in loop, with 20 hundredths of a second between each call
+      // Each following call runs the procedure once, without timer
+      // 
+      
+      PROCEDURE CheckActivity()
+      
+      // Retrieves the mouse position
+      nCursorPos is int
+      nCursorPos = CursorPos(cpScreen)
+      
+      // If the position of the mouse changed: exit
+      IF nCursorPos <> gnCursorPos THEN
+      	Close()
+      END
+      
+      // Stores the position of the mouse
+      gnCursorPos = nCursorPos
+     type : 458752
+   -
+     name : ScreenSaver
+     internal_properties : CAAAAAgAAACzOKsVIrYkburnrviBd0LpJNF/89VcVnOCHYdu6NlcQ9CoFgX0f54i3470nDzOXntDQhfpvQGxeQJqZzN5eKbm/WXjwkq2D/eM955d+wDdprS0rAs1ZoFebeZBtuobtSfigjCg3KUaokTtTJleoeMSOT/N5CB6UuwbnO8zstuvWiiEvFB9Hi8a8J1Bg1jtdpei43SjQEs=
+     procedure_id : 1798973637784412622
+     type_code : 14
+     code : |1-
+      // Summary: <specify the action of the procedure>
+      // Syntax:
+      //ScreenSaver ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      //// Automatic procedure:
+      // The procedure is run manually, during a call in the code
+      // It will be repeated in loop, with 10 hundredths of a second between each call
+      // Each following call runs the procedure once, without timer
+      // 
+      
+      PROCEDURE ScreenSaver()
+      
+      IF IMG_LOGO..Visible THEN
+      	
+      	// Hides the image progressively
+      	LOOP (10)
+      		IMG_LOGO..Opacity -= 10
+      		Wait(2, waitRedraw)
+      	END
+      	
+      END
+      
+      // Makes the image invisible
+      IMG_LOGO..Animation = False
+      IMG_LOGO..Opacity = 0
+      IMG_LOGO..Visible = False
+      
+      // Calculates a position at random
+      nX, nY are int
+      nX = Random(0, MyWindow..Width - IMG_LOGO..Width)
+      nY = Random(0, MyWindow..Height - IMG_LOGO..Height)
+      
+      // Applies the position
+      IMG_LOGO..X = nX
+      IMG_LOGO..Y = nY
+      
+      // Redisplays the image progressively
+      IMG_LOGO..Visible = True
+      
+      LOOP (10)
+      	IMG_LOGO..Opacity += 10
+      	Wait(2, waitRedraw)
+      END	
+      
+      IMG_LOGO..Animation = True
+      Wait(200, waitRedraw)
+      IMG_LOGO..Animation = False
+     type : 458752
+   -
+     name : CheckIfOtherInstance
+     internal_properties : CAAAAAgAAABa1UbNZyCzQZoqFzVqBuuSp6RErLrDpf6QavSFZZz660YTsRQBckAt0LiqWM5mVd5cLGx1xt71ExjkrV7UhLx9V2g60iyq3zqW3roAopP8ryyxH9ezVDlG0v/aFCnKFHmZSG8lGu97JBbBfJt6tjdaw6EljDZjZv3mE3Ksq3fVSLQOyDw1VHtmAm8x9ypyK0boCeeGmTI=
+     procedure_id : 1798973637784478158
+     type_code : 14
+     code : |1+
+      // Summary: Killing the other instances of our screen saver
+      // Syntax:
+      // CheckIfOtherInstance ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      //
+      PROCEDURE CheckIfOtherInstance()
+      
+      // Retrieves the current PID
+      nExePID is system int
+      nExePID = API("kernel32", "GetCurrentProcessId")
+      
+      // Retrieves the list of applications currently run
+      sListPID is string
+      sPID is string
+      sListPID = ExeListProcess(exePID, exeLongName)
+      
+      FOR EACH string sPID of sListPID SEPARATED BY CR
+      	// If it is the same executable
+      	IF fExtractPath(ExtractString(sPID, 2), fFileName+fExtension) ~= fExtractPath(ExeInfo(exeName),fFileName+fExtension) THEN
+      		// If it is not our instance
+      		IF ExtractString(sPID, 1) <> nExePID THEN
+      			// Kills the other instance
+      			ExeTerminate(Val(ExtractString(sPID, 1)))
+      		END
+      	END
+      END
+      
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : FI_FenêtreInterne1
+resources :
+ string_res :
+  identifier : 0x156ad3220017f735
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe
